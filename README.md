@@ -18,4 +18,17 @@
 ### recomendação: https://cursos.alura.com.br/forum/topico-permission-denied-publickey-82429
 
 ### ao abrir o seu projeto você vai clicar no seguinte comando
-![image](https://github.com/Samanta00/api-usuarios/assets/80990432/ab682757-c612-4892-8bea-26af0ea2f20f)
+![image](https://github.com/Samanta00/api-usuarios/assets/80990432/c11827af-f119-4f64-9053-557d871daa44)
+
+![image](https://github.com/Samanta00/api-usuarios/assets/80990432/6b29c933-f423-4d08-90ec-b426f89c0ab7)
+
+![image](https://github.com/Samanta00/api-usuarios/assets/80990432/c7a75f1c-6dac-4738-8913-13c6c126c7e5)
+
+## ótimo agora o navegador vai abrir automaticamente re redirecionando para uma tela, essa interface vai ficar da seguinte forma e você pode escrever a seguinte URL para acessar o sweggar: https://localhost:7255/swagger/index.html
+
+![image](https://github.com/Samanta00/api-usuarios/assets/80990432/4b61438f-1276-4de7-9930-ef8957b7f637)
+
+## Parabéns agora você consegue o acesso ao seu sweggar ![image](https://github.com/Samanta00/api-usuarios/assets/80990432/206199bf-0db9-4797-b387-3f84515175ab)
+
+
+
