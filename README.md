@@ -12,3 +12,9 @@
 
 
 ## Como Consumir a api
+### abra o terminal do seu computador e crie uma pasta para armazenas o projeto, ex: mkdir projetoNovo
+### após criar sua nova pasta abra essa pasta e clone o projeto dentro dela, ex: cd projetoNovo e depois git clone git@github.com:Samanta00/api-usuarios.git
+### ótimo, agora você ja tem o projeto em sua maquina, caso você não tenha conseguido clonar o projeto te recomendo analisar se você obtem a chave ssh do git
+### recomendação: https://cursos.alura.com.br/forum/topico-permission-denied-publickey-82429
+
+### ao abrir o seu projeto você vai clicar no seguinte comando
