@@ -24,5 +24,14 @@ namespace api_usuarios.Controller
             : NoContent();
             
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var usuariosGet= await _repository.BuscaUsuarioPorId(id);
+            return usuariosGet != null
+            ? Ok(usuariosGet)
+            : NotFound("Usuário não encontrado");
+        }
     }
 }
