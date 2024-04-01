@@ -15,7 +15,7 @@ namespace api_usuarios.Repository
         void EditarInfoUsuario(Usuario usuario);
 
         void DeletarRegistroUsuario(Usuario usuario);
-
-
+        
+        Task<bool>SaveChangesAsync();
     }
 }
