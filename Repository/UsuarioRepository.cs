@@ -38,7 +38,7 @@ namespace api_usuarios.Repository
 
         public void EditarInfoUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.Update(usuario);
         }
     }
 }
