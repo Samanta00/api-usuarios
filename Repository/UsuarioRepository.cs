@@ -17,7 +17,7 @@ namespace api_usuarios.Repository
         }
         public void AdicionarUsuario(Usuario usuario)
         {
-            
+            _context.Add(usuario);
         }
 
         public Task<Usuario> BuscaUsuario(int id)
