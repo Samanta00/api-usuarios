@@ -33,7 +33,7 @@ namespace api_usuarios.Repository
 
         public void DeletarRegistroUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.usuarios.Remove(usuario);
         }
 
         public void EditarInfoUsuario(Usuario usuario)
