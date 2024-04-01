@@ -40,5 +40,11 @@ namespace api_usuarios.Repository
         {
             _context.Update(usuario);
         }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return await _context.SaveChangesAsync() > 0;
+            
+        }
     }
 }
