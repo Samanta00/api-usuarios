@@ -18,3 +18,4 @@
 ### recomendação: https://cursos.alura.com.br/forum/topico-permission-denied-publickey-82429
 
 ### ao abrir o seu projeto você vai clicar no seguinte comando
+![image](https://github.com/Samanta00/api-usuarios/assets/80990432/ab682757-c612-4892-8bea-26af0ea2f20f)
