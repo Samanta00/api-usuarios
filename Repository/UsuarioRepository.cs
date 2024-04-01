@@ -1,16 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+using api_usuarios.Data;
 using api_usuarios.Model;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace api_usuarios.Repository
 {
     public class UsuarioRepository : IUsuarioRepository
     {
+        private readonly UsuarioDBContext _context;
+
+
+        public UsuarioRepository(UsuarioDBContext context)
+        {
+            _context = context;
+        }
         public void AdicionarUsuario(Usuario usuario)
         {
-            throw new NotImplementedException();
+            
         }
 
         public Task<Usuario> BuscaUsuario(int id)
