@@ -58,5 +58,18 @@ namespace api_usuarios.Controller
             ? Ok("Usuario atualizado com sucesso.")
             : BadRequest("Usuário não foi atualizado por algum erro");     
         }
+
+        [HttpDelete]
+        public async Task <IActionResult> Delete(int id){
+            var usuarioPorId= await _repository.BuscaUsuarioPorId(id);
+
+            if(usuarioPorId == null) return NotFound("Usuário Não encontrado");
+
+            _repository.DeletarRegistroUsuario(usuarioPorId);
+
+            return await _repository.SaveChangesAsync()
+            ? Ok("Usuario deletado com sucesso.")
+            : BadRequest("Usuário não foi deletado por algum erro");
+        }
     }
 }
