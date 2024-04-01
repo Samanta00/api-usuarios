@@ -9,7 +9,7 @@ namespace api_usuarios.Repository
     public interface IUsuarioRepository
     {
         Task<IEnumerable<Usuario>> BuscaUsuarios();
-        Task<Usuario> BuscaUsuario(int id);
+        Task<Usuario> BuscaUsuarioPorId(int id);
         void AdicionarUsuario(Usuario usuario);
 
         void EditarInfoUsuario(Usuario usuario);
