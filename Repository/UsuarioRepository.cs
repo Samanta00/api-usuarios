@@ -26,9 +26,9 @@ namespace api_usuarios.Repository
         
         }
 
-        public Task<IEnumerable<Usuario>> BuscaUsuarios()
+        public async Task<IEnumerable<Usuario>> BuscaUsuarios()
         {
-            throw new NotImplementedException();
+            return await _context.usuarios.ToListAsync();
         }
 
         public void DeletarRegistroUsuario(Usuario usuario)
