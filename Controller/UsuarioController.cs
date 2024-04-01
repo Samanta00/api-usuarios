@@ -41,5 +41,22 @@ namespace api_usuarios.Controller
             ? Ok("Usuario adicionado com sucesso.")
             : BadRequest("Usuário não foi salvo por algum erro");
         }
+
+        [HttpPut("{id}")]
+        public async Task <IActionResult> Put(Usuario usuario, int id){
+            var buscarUsuarioId = await _repository.BuscaUsuarioPorId(id);
+            if(buscarUsuarioId == null)NotFound("Usuário não encontrado");
+
+            buscarUsuarioId.Nome = usuario.Nome ?? buscarUsuarioId.Nome;
+            buscarUsuarioId.DataNascimento= usuario.DataNascimento != new DateTime()?
+            usuario.DataNascimento : buscarUsuarioId.DataNascimento;
+//vai verificar se a data de nascimento está vázia no banco, se estiver vázia ele vai atualizar comparando com a data que estou passando na requisição.
+       
+            _repository.EditarInfoUsuario(buscarUsuarioId);
+
+            return await _repository.SaveChangesAsync()
+            ? Ok("Usuario atualizado com sucesso.")
+            : BadRequest("Usuário não foi atualizado por algum erro");     
+        }
     }
 }
