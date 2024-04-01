@@ -33,5 +33,13 @@ namespace api_usuarios.Controller
             ? Ok(usuariosGet)
             : NotFound("Usuário não encontrado");
         }
+
+        [HttpPost]
+        public async Task <IActionResult> Post(Usuario usuario){
+            _repository.AdicionarUsuario(usuario);
+            return await _repository.SaveChangesAsync()
+            ? Ok("Usuario adicionado com sucesso.")
+            : BadRequest("Usuário não foi salvo por algum erro");
+        }
     }
 }
