@@ -20,9 +20,10 @@ namespace api_usuarios.Repository
             _context.Add(usuario);
         }
 
-        public Task<Usuario> BuscaUsuario(int id)
+        public async Task<Usuario> BuscaUsuarioPorId(int id)
         {
-            throw new NotImplementedException();
+            return await _context.usuarios.Where(x => x.ID == id).FirstOrDefaultAsync();
+        
         }
 
         public Task<IEnumerable<Usuario>> BuscaUsuarios()
